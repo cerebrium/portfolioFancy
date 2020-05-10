@@ -43,7 +43,7 @@ const Home = ({ myRef }) => {
                                 </button>
                             </div>
                         </a>
-                        <a href="#second_division" className='link_divs'>
+                        <a href="#contact_me" className='link_divs'>
                             <div class="button-container-1">
                                 <span class="mas">Contact Me</span>
                                 <button id='work' type="button" name="Hover">
