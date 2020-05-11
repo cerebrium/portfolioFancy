@@ -3,6 +3,9 @@ import './style.css'
 import bentley from './images/bentlesSmall.jpg'
 import pinkBeach from './images/pinkKomodo.jpg'
 import arrow from './images/arrowUp.png'
+import blog from './images/travelBlog.png'
+import Projects from './projects'
+import videoBlog from './images/blogVideo.mp4'
 
 const Rest = (props) => {
     const [ navName, setNavName ] = useState('navNone')
@@ -104,6 +107,16 @@ const Rest = (props) => {
                 </div>
                 <div className='projects_div'>
                   <h1>Projects</h1><br />
+                  <Projects 
+                  videoStream={'https://res.cloudinary.com/shanklandium/video/upload/v1589174902/daveDesignsVideo_ydcv0y.mp4'} 
+                  title='Dave Designs'
+                  text='Website for Dave Designs! Shows a New Hampshire man and his wood crafting skills. Uses Gatsby and Javascript.'
+                  />
+                  <Projects 
+                  videoStream={'https://res.cloudinary.com/shanklandium/video/upload/v1589172778/blogVideo_uzddoz.mp4'} 
+                  title='Bloggify'
+                  text='My blog showing some of my travels and passions. Uses Javascript and Gatsby.'
+                  />
                 </div>
             </div>
             <div className='about_me' id='about_me'>
@@ -112,7 +125,7 @@ const Rest = (props) => {
                   About Me
                 </h1>
                 <br />
-                <h3>
+                <h3 className='about_text'>
                   I am a Full Stack Developer, with frontend interests. I like working with companies to find solutions to problems that allow for the best user experience whilst meeting the companies demands. I am currently building projects as a freelance developer, check out some of my stuff in the projects section. 
                   <a href="#second_division" ><img src={arrow} alt="Arrow" className='arrow_up'/></a>
                   <br />

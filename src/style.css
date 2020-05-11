@@ -244,7 +244,6 @@ body {
   position: relative;
   height: 20vh;
   text-align: center;
-  background-color: white;
 }
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -359,6 +358,19 @@ body {
 .projects_div {
   padding-top: 4rem;
   padding-left: 2rem;
+}
+.projects_pictures_video {
+  height: 35vh;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  background-color: #2a2b2d;
+  box-shadow: 6px 12px 10px #2a2b2d;
+}
+.projects_main_component_div {
+  display: flex;
+  width: 90%;
+  height: 30vh;
+  margin-bottom: 5rem;
 }
 .about_me {
   min-height: 100vh;
@@ -683,4 +695,93 @@ body {
   font-size: 2em;
   color: #2a2b2d;
   padding-top: 10rem;
+}
+@media only screen and (max-width: 1350px) {
+  html {
+    font-size: 90%;
+  }
+  .button-container-2 {
+    width: 15vw;
+  }
+}
+@media (max-width: 800px) {
+  .waves {
+    height: 40px;
+    min-height: 120px;
+  }
+  .content {
+    height: 10vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .button-container-1 {
+    width: 24vw;
+  }
+  .button-container-2 {
+    width: 30vw;
+  }
+  .myTextArea {
+    width: 70vw;
+  }
+  .inputBars {
+    width: 40vw;
+  }
+  .title_container {
+    width: 50vw;
+  }
+  .middle_content_container {
+    min-width: 80vw;
+  }
+  .projects_main_component_div {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .projects_pictures_video {
+    width: 40vw;
+    height: 22vh;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 2px 2px 2px #2a2b2d;
+  }
+  .about_text {
+    width: 95vw;
+  }
+  .about_title {
+    padding-top: 4rem;
+    padding-left: 0.5rem;
+    width: 70vw;
+  }
+  .about_pictures {
+    height: 20vh;
+    margin: 1rem;
+  }
+  .visible_divs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .links_two {
+    padding: 0;
+    margin: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .projects_main_component_div {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects_pictures_video {
+    width: 80vw;
+    height: 22vh;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 2px 2px 2px #2a2b2d;
+  }
 }
