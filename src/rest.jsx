@@ -100,10 +100,18 @@ const Rest = (props) => {
                 setTopCoords(ele.getBoundingClientRect().top)
             }}>
                 <div className={`${navName}`}>
-                    <a href="#header" className='links_two'><div className='nav_text'><h2 className='the_text'>Home</h2></div></a>
-                    <a href="#second_division" className='links_two'><div className='nav_text'><h2 className='the_text'>Projects</h2></div></a>
-                    <a href="#about_me" id='about_me_id'className='links_two'><div className='nav_text'><h2 className='the_text'>About</h2></div></a>
-                    <a href="#contact_me" className='links_two'><div className='nav_text'><h2 className='the_text'>Contact</h2></div></a>
+                    <div className='nav_seperation_div'>
+                      <a href="#header" className='links_two'><div className='nav_text'><h2 className='the_text'>Home</h2></div></a>
+                    </div>
+                    <div className='nav_seperation_div'>
+                      <a href="#second_division" className='links_two'><div className='nav_text'><h2 className='the_text'>Projects</h2></div></a>
+                    </div>
+                    <div className='nav_seperation_div'>
+                      <a href="#about_me" id='about_me_id'className='links_two'><div className='nav_text'><h2 className='the_text'>About</h2></div></a>
+                    </div>
+                    <div className='nav_seperation_div'>
+                      <a href="#contact_me" className='links_two'><div className='nav_text'><h2 className='the_text'>Contact</h2></div></a>
+                    </div>
                 </div>
                 <div className='projects_div'>
                   <h1>Projects</h1><br />
