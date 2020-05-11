@@ -366,8 +366,6 @@ html, body {
 
 .links_two {
   text-decoration: none;
-  font-size: 1.2em;
-  margin-left: 2rem;
   color: $blueColor;
 }
 
@@ -380,8 +378,21 @@ html, body {
   color: $blueColor;
 }
 
-.nav_seperation_div {
+.nav_seperation_div_home {
   margin-left: 2rem;
+  // width: 4vw;
+}
+.nav_seperation_div_projects {
+  margin-left: 2rem;
+  // width: 7vw;
+}
+.nav_seperation_div_about {
+  margin-left: 2rem;
+  // width: 5vw;
+}
+.nav_seperation_div_contact {
+  margin-left: 2rem;
+  // width: 7vw;
 }
 
 .nav_text {
