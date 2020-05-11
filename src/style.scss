@@ -3,6 +3,7 @@
 $blackColor: rgb(42, 43, 45);
 $blueSwitch: rgb(42, 43, 45);
 $blackHover: rgb(51, 52, 54);
+$blackHoverNav: rgb(63, 64, 66);
 $blueColor: rgb(45, 168, 216);
 $blackSwitch: rgb(45, 168, 216);
 $font: 'Special Elite', cursive;
@@ -79,16 +80,19 @@ html, body {
 }
 
 .images_under_name {
-  height: 4.5vh;
+  height: 3vh;
   opacity: .9;
-  margin: 0 .5rem 0 .5rem;
 }
 
-.images_under_name:hover {
-  opacity: 1;
+.circles_for_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  margin-right: 5px;
   border-radius: 50%;
+  border: 1px solid $blackColor;
 }
-
 
 .under_images_container {
   display: flex;
@@ -361,27 +365,44 @@ html, body {
   align-items: center;
 }
 
-.nav_text:hover {
+.links_two {
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-left: 2rem;
   color: $blueColor;
-  background-color: $blackColor;
 }
 
-.nav_text:before {
-  content: "";
-  visibility: hidden;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: $blueColor;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+.the_text {
+  display: absolute;
+  z-index: 1;
+  min-width: 100%;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: $blueColor;
 }
 
-.nav_text:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+.nav_text {
+  width: 0%;
+  padding: .2rem;
+}
+
+.nav_text:hover {
+  animation: hoverAnimationNav .5s forwards;
+}
+
+@keyframes hoverAnimationNav {
+  0% {
+    width: 0%;
+    padding: .2rem;
+  }
+  
+  100% {
+    width: 100%;
+    padding: .2rem;
+    transform: scaleX(1);
+    background-color: $blackHoverNav;
+    border-radius: .3rem;
+  }
 }
 
 /********************************* END OF TOP PAGE ****************************************/
@@ -394,11 +415,97 @@ html, body {
   background-color: $blueColor;
 }
 
+.projects_div {
+  padding-top: 4rem;
+  padding-left: 2rem;
+}
+
 /********************************* ABOUT ME ****************************************/
 .about_me {
   min-height: 100vh;
   background-color: $blueColor;
   color: $blackColor;
+}
+
+.about_title {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  width: 70vw;
+}
+
+.about_pictures {
+  margin: 2rem;
+  height: 30vh;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: $blackColor;
+}
+
+// .about_pictures:hover {
+//   animation: arrowJiggle .5s forwards;
+// }
+
+@keyframes arrowJiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.arrow_up {
+  height: 3vh;
+  border-radius: 1rem;
+}
+
+.arrow_up:hover {
+  animation: arrowJiggle .5s forwards;
+}
+
+.invisible_divs {
+  display: none;
+}
+
+@keyframes makeVisible {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+.arrow_left {
+  height: 3vh;
+  border-radius: 1rem;
+}
+
+.visible_divs {
+  animation: makeVisible 1s forwards;
+}
+
+@keyframes arrowJiggleDown {
+  0% {
+    transform: rotate(0deg);
+    height: 3vh;
+    border-radius: 1rem;
+  }
+  100% {
+    transform: rotate(-90deg);
+    height: 3vh;
+    border-radius: 1rem;
+  }
+}
+
+.arrow_down {
+  animation: arrowJiggleDown 1s forwards;
+}
+
+.arrow_down:hover {
+  animation: arrowJiggleDown .5s forwards;
 }
 
 /********************************* CONTACT ME ****************************************/

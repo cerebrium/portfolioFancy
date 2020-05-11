@@ -1,5 +1,9 @@
-import React, { useState} from 'react'
+import React from 'react'
 import emailImage from './images/email.png'
+import github from './images/github.png'
+import linkedin from './images/linkedin.png'
+import document from './images/document.png'
+import resume from './images/Resume.pdf'
 import './style.css';
 
 const Home = ({ myRef }) => {
@@ -15,10 +19,26 @@ const Home = ({ myRef }) => {
                 <div className='conatiner_top_one'>
                     <h1 className='main_title_Iam'>Nicholas Shankland </h1>
                     <div className='under_images_container'>
-                        <img src={emailImage} alt="email" className='images_under_name'/>
-                        <img src={emailImage} alt="email" className='images_under_name'/>
-                        <img src={emailImage} alt="email" className='images_under_name'/>
-                        <img src={emailImage} alt="email" className='images_under_name'/>
+                        <a href='#contact_me'>
+                            <div className='circles_for_icons'>
+                                <img src={emailImage} alt="email" className='images_under_name'/>
+                            </div>
+                        </a>
+                        <a href='https://github.com/cerebrium' target='_blank' rel="noopener noreferrer">
+                            <div className='circles_for_icons'>
+                                <img src={github} alt="email" className='images_under_name'/>
+                            </div>
+                        </a>
+                        <a href='https://www.linkedin.com/feed/' target='_blank' rel="noopener noreferrer">
+                            <div className='circles_for_icons' >
+                                <img src={linkedin} alt="email" className='images_under_name'/>
+                            </div>
+                        </a>
+                        <a href={resume} target='_blank' rel="noopener noreferrer">
+                            <div className='circles_for_icons'>
+                                <img src={document} alt="email" className='images_under_name'/>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 </div>

@@ -1,10 +1,15 @@
-import React, { useEffect, useState, useCallback, useRef} from 'react'
+import React, { useEffect, useState, useCallback} from 'react'
 import './style.css'
+import bentley from './images/bentlesSmall.jpg'
+import pinkBeach from './images/pinkKomodo.jpg'
+import arrow from './images/arrowUp.png'
 
 const Rest = (props) => {
     const [ navName, setNavName ] = useState('navNone')
     const [ topCoords, setTopCoords] = useState(0)
     const [ status, setStatus ] = useState('')
+    const [ pictureDivs, setPictureDivs ] = useState('invisible_divs')
+    const [ arrowDirection, setArrowDirection ] = useState('arrow_left')
 
     const handleScroll = useCallback(() => {
       if (window.pageYOffset >= topCoords) {
@@ -12,7 +17,7 @@ const Rest = (props) => {
       } else {
         setNavName('navNone')
       }
-    })
+    }, [topCoords])
   
     window.addEventListener("scroll", handleScroll)
     
@@ -79,6 +84,12 @@ const Rest = (props) => {
       )
     }
 
+    // mouse enter func
+    const handleMouseEnter = () => {
+      pictureDivs === 'visible_divs' ? setPictureDivs('invisible_divs') : setPictureDivs('visible_divs')
+      arrowDirection === 'arrow_left' ? setArrowDirection('arrow_down') : setArrowDirection('arrow_left')
+    }
+
     return (
         <>
             <div className='second_division' id='second_division' ref={ele => {
@@ -86,16 +97,33 @@ const Rest = (props) => {
                 setTopCoords(ele.getBoundingClientRect().top)
             }}>
                 <div className={`${navName}`}>
-                    <a href="#header" className='links_two'><h2 className='nav_text'>Home</h2></a>
-                    <a href="#second_division" className='links_two'><h2 className='nav_text'>Projects</h2></a>
-                    <a href="#about_me" className='links_two'><h2 className='nav_text'>About Me</h2></a>
-                    <a href="#contact_me" className='links_two'><h2 className='nav_text'>Contact Me</h2></a>
+                    <a href="#header" className='links_two'><div className='nav_text'><h2 className='the_text'>Home</h2></div></a>
+                    <a href="#second_division" className='links_two'><div className='nav_text'><h2 className='the_text'>Projects</h2></div></a>
+                    <a href="#about_me" className='links_two'><div className='nav_text'><h2 className='the_text'>About</h2></div></a>
+                    <a href="#contact_me" className='links_two'><div className='nav_text'><h2 className='the_text'>Contact</h2></div></a>
+                </div>
+                <div className='projects_div'>
+                  <h1>Projects</h1><br />
                 </div>
             </div>
             <div className='about_me' id='about_me'>
+              <div className='about_title'>
                 <h1>
-                    Hello
+                  About Me
                 </h1>
+                <br />
+                <h3>
+                  I am a Full Stack Developer, with frontend interests. I like working with companies to find solutions to problems that allow for the best user experience whilst meeting the companies demands. I am currently building projects as a freelance developer, check out some of my stuff in the projects section. 
+                  <a href="#second_division" ><img src={arrow} alt="Arrow" className='arrow_up'/></a>
+                  <br />
+                  <br />
+                  I grew up in Seattle and love the PNW, however I am going to find some more sun some time in my life! Along with developing, I enjoy dogs, hiking, kayaking and generally anything involving fun people and places. Next vacation is hopefully going to be in Africa on the safari. Here are some photos of my dog and my travels. <img src={arrow} alt="Arrow" className={arrowDirection} onMouseEnter={handleMouseEnter}/>
+                </h3>
+                <div className={pictureDivs}>
+                  <img src={bentley} alt="Dog" className='about_pictures'/>
+                  <img src={pinkBeach} alt="Pink Beach" className='about_pictures'/>
+                </div>
+              </div>
             </div>
             <div className='contact_me' id='contact_me'>
               {/* contact content */}
