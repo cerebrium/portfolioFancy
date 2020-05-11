@@ -398,7 +398,7 @@ html, body {
 
 .nav_text {
   padding: .2rem;
-  width: 0%;
+  width: 100%;
 }
 
 .nav_text:hover {
@@ -407,14 +407,18 @@ html, body {
 
 @keyframes hoverAnimationNav {
   0% {
-    width: 0%;
+    width: 100%;
     padding: .2rem;
+  }
+
+  50% {
+    width: 0%;
   }
   
   100% {
     width: 100%;
     padding: .2rem;
-    transform: scaleX(1);
+    transform: scaleY(1);
     background-color: $blackHoverNav;
     border-radius: .3rem;
   }
