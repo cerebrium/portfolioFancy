@@ -341,8 +341,8 @@ body {
   margin-left: 2rem;
 }
 .nav_text {
-  width: 100%;
   padding: 0.2rem;
+  width: 100%;
 }
 .nav_text:hover {
   animation: hoverAnimationNav 0.5s forwards;
