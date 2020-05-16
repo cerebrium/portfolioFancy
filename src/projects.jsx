@@ -13,14 +13,18 @@ const Projects = (props) => {
 
     return (
         <div className='projects_main_component_div'>
-            <video className='projects_pictures_video' 
-            muted='true' 
-            loop 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            >
-                <source src={props.videoStream} type="video/mp4"/>
-            </video>
+            <div className='projects_pictures_video_container'>
+                <a href={props.link} target='_blank' rel="noopener noreferrer">
+                    <video className='projects_pictures_video' 
+                        muted='true' 
+                        loop 
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
+                        <source src={props.videoStream} type="video/mp4"/>
+                    </video>
+                </a>
+            </div>
             <div>
                 <h1>{props.title}</h1>
                 <h3>{props.text}</h3>

@@ -118,12 +118,14 @@ const Rest = (props) => {
                   <Projects 
                   videoStream={'https://res.cloudinary.com/shanklandium/video/upload/v1589174902/daveDesignsVideo_ydcv0y.mp4'} 
                   title='Dave Designs'
+                  link="https://davedesigns.netlify.app/"
                   text='Website for Dave Designs! Shows a New Hampshire man and his wood crafting skills. Uses Gatsby and Javascript.'
                   />
                   <Projects 
-                  videoStream={'https://res.cloudinary.com/shanklandium/video/upload/v1589172778/blogVideo_uzddoz.mp4'} 
-                  title='Bloggify'
-                  text='My blog showing some of my travels and passions. Uses Javascript and Gatsby.'
+                  videoStream={'https://res.cloudinary.com/shanklandium/video/upload/v1589669656/crmPreview_hrhf2p.mp4'} 
+                  title='Crm'
+                  link="https://portfoliocrm.netlify.app/"
+                  text='React application that is a mock of a crm. Uses a django backend. Desktop application'
                   />
                 </div>
             </div>
