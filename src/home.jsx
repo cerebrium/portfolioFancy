@@ -3,7 +3,7 @@ import emailImage from './images/email.png'
 import github from './images/github.png'
 import linkedin from './images/linkedin.png'
 import document from './images/document.png'
-import resume from './images/ResumeNew.pdf'
+import resume from './images/Resume3.pdf'
 import './style.css';
 
 const Home = ({ myRef }) => {

@@ -384,7 +384,7 @@ html, body {
   // width: 4vw;
 }
 .nav_seperation_div_projects {
-  margin-left: 2rem;
+  margin-left: 2rem; 
   // width: 7vw;
 }
 .nav_seperation_div_about {
@@ -439,30 +439,19 @@ html, body {
   padding-left: 2rem;
 }
 
-// .projects_pictures_video_container {
-//   width: 100%;
-//   height: 100%;
-//   border-radius: .5rem;
-//   // padding: 1rem;
-//   margin-right: 2rem;
-//   background-color: $blackColor;
-//   box-shadow:  6px 12px 10px $blackColor;
-// }
-
 .projects_pictures_video {
-  max-width: 30vw;
-  // margin-bottom: 2rem;
-  margin-right: 2rem;
+  height: 35vh;
   border-radius: 1rem;
+  margin-right: 2rem;
+  background-color: $blackColor;
+  box-shadow:  6px 12px 10px $blackColor;
 }
 
 .projects_main_component_div {
   display: flex;
-  justify-items: flex-start;
-  align-items: flex-start;
   width: 90%;
-  height: 35vh;
-  margin-bottom: 3rem;
+  height: 30vh;
+  margin-bottom: 5rem;
 }
 
 /********************************* ABOUT ME ****************************************/
