@@ -789,6 +789,16 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .my_submit_button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    color: #2da8d8;
+    font-family: "Special Elite", cursive;
+    font-size: 1em;
+    border-radius: 0.5rem;
+  }
   .projects_pictures_video {
     width: 80vw;
     height: 22vh;
