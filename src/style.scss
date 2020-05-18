@@ -949,7 +949,7 @@ html, body {
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 490px) {
     .projects_main_component_div {
       width: 90vw;
       display: flex;
@@ -974,6 +974,7 @@ html, body {
       margin: 0;
       margin-bottom: 1.5rem;
       box-shadow:  2px 2px 2px $blackColor;
+      opacity: 0;
     }
 
     #dd{

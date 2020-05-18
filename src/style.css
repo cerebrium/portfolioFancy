@@ -781,7 +781,7 @@ body {
     margin: 0.5rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   .projects_main_component_div {
     width: 90vw;
     display: flex;
@@ -804,6 +804,7 @@ body {
     margin: 0;
     margin-bottom: 1.5rem;
     box-shadow: 2px 2px 2px #2a2b2d;
+    opacity: 0;
   }
   #dd {
     width: 80vw;
