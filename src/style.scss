@@ -915,12 +915,10 @@ html, body {
       margin-bottom: 3rem;
     }
     .projects_pictures_video {
-      width: 40vw;
-      height: 22vh;
       padding: 0;
       margin: 0;
       margin-bottom: 1.5rem;
-      box-shadow:  2px 2px 2px $blackColor;
+      box-shadow:  6px 6px 6px $blackColor;
     }
 
     .about_text {
@@ -975,6 +973,30 @@ html, body {
       padding: 0;
       margin: 0;
       margin-bottom: 1.5rem;
+      box-shadow:  2px 2px 2px $blackColor;
+    }
+
+    #dd{
+      width: 80vw;
+      height: 22vh;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 17vh;
+      background-image: url('./images/daveDesigns.png');
+      background-size: cover;
+      border-radius: 1rem;
+      box-shadow:  2px 2px 2px $blackColor;
+    }
+
+    #crm{
+      width: 80vw;
+      height: 22vh;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1.5rem;
+      background-image: url('./images/crmScreenshot.png');
+      background-size: cover;
+      border-radius: 1rem;
       box-shadow:  2px 2px 2px $blackColor;
     }
   }

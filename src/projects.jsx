@@ -12,7 +12,7 @@ const Projects = (props) => {
     }    
 
     return (
-        <div className='projects_main_component_div'>
+        <div className='projects_main_component_div' id={`${props.id}`}>
             <div className='projects_pictures_video_container'>
                 <a href={props.link} target='_blank' rel="noopener noreferrer">
                     <video className='projects_pictures_video' 
