@@ -440,11 +440,11 @@ html, body {
 }
 
 .projects_pictures_video {
-  height: 35vh;
-  border-radius: 1rem;
+  max-width: 30vw;
+  // margin-bottom: 2rem;
   margin-right: 2rem;
-  background-color: $blackColor;
-  box-shadow:  6px 12px 10px $blackColor;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 6px $blackColor;
 }
 
 .projects_main_component_div {

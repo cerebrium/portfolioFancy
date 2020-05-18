@@ -374,11 +374,10 @@ body {
   padding-left: 2rem;
 }
 .projects_pictures_video {
-  height: 35vh;
-  border-radius: 1rem;
+  max-width: 30vw;
   margin-right: 2rem;
-  background-color: #2a2b2d;
-  box-shadow: 6px 12px 10px #2a2b2d;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 6px #2a2b2d;
 }
 .projects_main_component_div {
   display: flex;
