@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import './style.css';
 import Home from './home'
 import Rest from './rest'

@@ -3,9 +3,7 @@ import './style.css'
 import bentley from './images/bentlesSmall.jpg'
 import pinkBeach from './images/pinkKomodo.jpg'
 import arrow from './images/arrowUp.png'
-import blog from './images/travelBlog.png'
 import Projects from './projects'
-import videoBlog from './images/blogVideo.mp4'
 
 const Rest = (props) => {
     const [ navName, setNavName ] = useState('navNone')
