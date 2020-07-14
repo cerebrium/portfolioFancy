@@ -124,7 +124,7 @@ const Rest = (props) => {
                   videoStream={'https://res.cloudinary.com/shanklandium/video/upload/v1589669656/crmPreview_hrhf2p.mp4'} 
                   title='Crm'
                   id='crm'
-                  link="https://portfoliocrm.netlify.app/"
+                  link="https://loving-wozniak-848d73.netlify.app/"
                   text='React application that is a mock of a crm. Uses a django backend. Desktop application'
                   />
                 </div>
