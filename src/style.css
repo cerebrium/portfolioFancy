@@ -47,6 +47,8 @@ body {
   background-color: #2da8d8;
 }
 .inner-header_top {
+  z-index: 1;
+  background-color: #2da8d8;
   height: 35vh;
   width: 100%;
   margin: 0;
@@ -122,7 +124,7 @@ body {
 
   100% {
     opacity: 1;
-    height: 21%;
+    height: 21vh;
     width: 3px;
     background-color: #2a2b2d;
   }
@@ -425,20 +427,6 @@ body {
   }
   100% {
     transform: rotate(90deg);
-  }
-}
-@-webkit-keyframes middleLineTop {
-  0% {
-    opacity: 0;
-    width: 3px;
-    height: 0;
-  }
-
-  100% {
-    opacity: 1;
-    height: 21%;
-    width: 3px;
-    background-color: #2a2b2d;
   }
 }
 
