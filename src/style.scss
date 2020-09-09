@@ -155,6 +155,20 @@ html, body {
 }
 
 //// middle lines
+@-webkit-keyframes middleLineTop {
+  0% {
+    opacity: 0;
+    width: 3px;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 21%;
+    width: 3px;
+    background-color: $blackColor;
+  }
+}
 @keyframes middleLineTop {
   0% {
     opacity: 0;
@@ -229,6 +243,14 @@ html, body {
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes fadeInTop {
   0% {
@@ -270,7 +292,88 @@ html, body {
   }
 }
 
+@-webkit-keyframes fadeInTop {
+  0% {
+    width: 0;
+    height: 0;
+    border-top: 3px solid $blackColor;
+    border-bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+  25% {
+    width: 25%;
+    height: 0;
+    border-top: 3px solid $blackColor;
+    padding: 0;
+    margin: 0;
+  }
+  50% {
+    width: 25%;
+    border-top: 3px solid $blackColor;
+    border-right: 3px solid $blackColor;
+    padding: 0;
+    margin: 0;
+  }
+  75% {
+    width: 25%;
+    border-top: 3px solid $blackColor;
+    border-right: 3px solid $blackColor;
+    border-left: 3px solid $blackColor;
+    top: 50%;
+    border-bottom: 0;
+    margin: 0;
+  }
+  100% {
+    height: 10%;
+    border: 3px solid $blackColor;
+    opacity: 1;
+    padding: 1rem;
+  }
+}
+
 @keyframes fadeInBottom {
+  0% {
+    width: 0;
+    height: 0;
+    border-top: 3px solid $blackColor;
+    border-bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+  25% {
+    width: 60%;
+    height: 0;
+    border-top: 3px solid $blackColor;
+    padding: 0;
+    margin: 0;
+  }
+  50% {
+    width: 60%;
+    border-top: 3px solid $blackColor;
+    border-right: 3px solid $blackColor;
+    padding: 0;
+    margin: 0;
+  }
+  75% {
+    width: 60%;
+    border-top: 3px solid $blackColor;
+    border-right: 3px solid $blackColor;
+    border-left: 3px solid $blackColor;
+    top: 50%;
+    border-bottom: 0;
+    margin: 0;
+  }
+  100% {
+    width: 60%;
+    height: 25%;
+    border: 3px solid $blackColor;
+    opacity: 1;
+    padding: 1rem;
+  }
+}
+
+@-webkit-keyframes fadeInBottom {
   0% {
     width: 0;
     height: 0;
@@ -360,6 +463,15 @@ html, body {
   }
 }
 
+@-webkit-keyframes move-forever {
+  0% {
+  transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
@@ -393,6 +505,15 @@ html, body {
 }
 
 @keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes moveDown {
   from {
     transform: translateY(-5rem);
   }
@@ -458,6 +579,25 @@ html, body {
 }
 
 @keyframes hoverAnimationNav {
+  0% {
+    width: 100%;
+    padding: .2rem;
+  }
+
+  1% {
+    width: 0%;
+  }
+  
+  100% {
+    width: 100%;
+    padding: .2rem;
+    transform: scaleY(1);
+    background-color: $blackHoverNav;
+    border-radius: .3rem;
+  }
+}
+
+@-webkit-keyframes hoverAnimationNav {
   0% {
     width: 100%;
     padding: .2rem;
@@ -543,6 +683,15 @@ html, body {
   }
 }
 
+@-webkit-keyframes arrowJiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
 .arrow_up {
   height: 3%;
   border-radius: 1rem;
@@ -556,7 +705,28 @@ html, body {
   display: none;
 }
 
+.arrow_left {
+  height: 3%;
+  border-radius: 1rem;
+}
+
+.visible_divs {
+  animation: makeVisible 1s forwards;
+}
+
 @keyframes makeVisible {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    -webkit-display: flex;
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes makeVisible {
   0% {
     display: none;
     opacity: 0;
@@ -578,6 +748,19 @@ html, body {
 }
 
 @keyframes arrowJiggleDown {
+  0% {
+    transform: rotate(0deg);
+    height: 3%;
+    border-radius: 1rem;
+  }
+  100% {
+    transform: rotate(-90deg);
+    height: 3%;
+    border-radius: 1rem;
+  }
+}
+
+@-webkit-keyframes arrowJiggleDown {
   0% {
     transform: rotate(0deg);
     height: 3%;
