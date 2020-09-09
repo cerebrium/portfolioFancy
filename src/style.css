@@ -457,6 +457,7 @@ body {
   animation: moveDown 1s ease-in-out;
   display: flex;
   align-items: center;
+  z-index: .99;
 }
 .links_two {
   text-decoration: none;
