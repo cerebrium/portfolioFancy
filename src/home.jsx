@@ -21,22 +21,22 @@ const Home = ({ myRef }) => {
                     <div className='under_images_container'>
                         <a href='#contact_me'>
                             <div className='circles_for_icons'>
-                                <img src={emailImage} alt="email" className='images_under_name'/>
+                                <img src={emailImage} alt="email" className='images_under_name' title='Email'/>
                             </div>
                         </a>
                         <a href='https://github.com/cerebrium' target='_blank' rel="noopener noreferrer">
                             <div className='circles_for_icons'>
-                                <img src={github} alt="email" className='images_under_name'/>
+                                <img src={github} alt="email" className='images_under_name' title='Github'/>
                             </div>
                         </a>
                         <a href='https://www.linkedin.com/feed/' target='_blank' rel="noopener noreferrer">
                             <div className='circles_for_icons' >
-                                <img src={linkedin} alt="email" className='images_under_name'/>
+                                <img src={linkedin} alt="email" className='images_under_name' title='Linkedin'/>
                             </div>
                         </a>
                         <a href={resume} target='_blank' rel="noopener noreferrer">
                             <div className='circles_for_icons'>
-                                <img src={document} alt="email" className='images_under_name'/>
+                                <img src={document} alt="email" className='images_under_name' title='Resume'/>
                             </div>
                         </a>
                     </div>

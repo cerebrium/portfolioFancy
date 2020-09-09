@@ -72,8 +72,8 @@ const Rest = (props) => {
                 <p className='submitted_message'>Thanks!</p>
               </div>
               : 
-              <div class="button-container-2">
-                  <span class="mas2">Contact Me</span>
+              <div className="button-container-2">
+                  <span className="mas2">Contact Me</span>
                   <button id='work2' type="button" name="Hover">
                     <input type="submit" value="Contact Me" className='my_submit_button'/>
                   </button>
@@ -125,7 +125,7 @@ const Rest = (props) => {
                   title='Crm'
                   id='crm'
                   link="https://portfoliocrm.netlify.app/"
-                  text='React application that is a mock of a crm. Uses a django backend. Desktop application'
+                  text='React application that is a mock of a crm. Uses a django backend. Desktop application. Takes up to 30 seconds to load'
                   />
                 </div>
             </div>

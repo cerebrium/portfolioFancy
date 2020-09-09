@@ -14,6 +14,16 @@ $font: 'Special Elite', cursive;
   padding: 0;
 }
 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,  pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 html, body {
     border: 0;
     margin: 0;
@@ -48,8 +58,10 @@ html, body {
   animation-duration: .5s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
+  -webkit-display: flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: space-evenly;
 }
 
@@ -66,9 +78,11 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  -webkit-display: flex;
   display: flex;
   padding-top: 2rem;
   align-items: center;
+  -webkit-align-items: center;
   flex-direction: column;
 }
 
@@ -86,9 +100,12 @@ html, body {
 }
 
 .circles_for_icons {
+  -webkit-display: flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
   padding: 7px;
   margin-right: 5px;
   border-radius: 50%;
@@ -96,9 +113,12 @@ html, body {
 }
 
 .under_images_container {
+  -webkit-display: flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .inner-header {
@@ -106,8 +126,10 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  -webkit-display: flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   flex-direction: column;
 }
 
@@ -152,9 +174,12 @@ html, body {
 .title_container {
   height: 10vh;
   width: 25vw;
+  -webkit-display: flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
   animation-name: fadeInTop;
   animation-duration: .5s;
   animation-fill-mode: forwards;
@@ -361,8 +386,10 @@ html, body {
   position: fixed;
   top: 0;
   animation: moveDown 1s ease-in-out;
+  -webkit-display: flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
 }
 
 .links_two {
@@ -448,6 +475,7 @@ html, body {
 }
 
 .projects_main_component_div {
+  -webkit-display: flex;
   display: flex;
   width: 90%;
   height: 30vh;
@@ -507,6 +535,7 @@ html, body {
     opacity: 0;
   }
   100% {
+    -webkit-display: flex;
     display: flex;
     opacity: 1;
   }
@@ -785,6 +814,7 @@ html, body {
  /****************************** CONTACT FORM **********************************/
 
  .contact_form {
+  -webkit-display: flex;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -910,6 +940,7 @@ html, body {
 
     .projects_main_component_div {
       width: 90vw;
+      -webkit-display: flex;
       display: flex;
       flex-direction: column;
       margin-bottom: 3rem;
@@ -937,6 +968,7 @@ html, body {
     }
 
     .visible_divs {
+      -webkit-display: flex;
       display: flex;
       margin: 0;
       padding: 0;
@@ -952,6 +984,7 @@ html, body {
   @media (max-width: 490px) {
     .projects_main_component_div {
       width: 90vw;
+      -webkit-display: flex;
       display: flex;
       flex-direction: column;
     }
