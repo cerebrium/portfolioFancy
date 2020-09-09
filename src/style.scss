@@ -92,7 +92,11 @@ html, body {
 }
 
 .middle_content_container {
-  border: solid 3px $blackColor;
+  width: 60%;
+  height: 25%;
+  border: 3px solid $blackColor;
+  opacity: 1;
+  padding: 1rem;
   animation-name: fadeInBottom;
   -webkit-animation-name: fadeInBottom;
   animation-duration: .5s;
@@ -185,7 +189,11 @@ html, body {
 }
 
 .line_from_top {
-  opacity: 0;
+  // opacity: 0;
+  opacity: 1;
+  height: 21%;
+  width: 3px;
+  background-color: $blackColor;
   animation-name: middleLineTop;
   -webkit-animation-name: middleLineTop;
   animation-fill-mode: forwards;
@@ -199,6 +207,10 @@ html, body {
 // end of middle lines
 
 .title_container {
+  height: 10%;
+  border: 3px solid $blackColor;
+  opacity: 1;
+  padding: 1rem;
   height: 10%;
   width: 25%;
   display: flex;
