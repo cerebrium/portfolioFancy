@@ -55,9 +55,13 @@ html, body {
 .middle_content_inner {
   opacity: 0;
   animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
   animation-duration: .5s;
+  -webkit-animation-duration: .5s;
   animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   -webkit-display: flex;
   display: flex;
   align-items: center;
@@ -90,8 +94,11 @@ html, body {
 .middle_content_container {
   border: solid 3px $blackColor;
   animation-name: fadeInBottom;
+  -webkit-animation-name: fadeInBottom;
   animation-duration: .5s;
+  -webkit-animation-duration: .5s;
   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .images_under_name {
@@ -166,9 +173,13 @@ html, body {
 .line_from_top {
   opacity: 0;
   animation-name: middleLineTop;
+  -webkit-animation-name: middleLineTop;
   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 }
 
 // end of middle lines
@@ -183,16 +194,23 @@ html, body {
   justify-content: center;
   -webkit-justify-content: center;
   animation-name: fadeInTop;
+  -webkit-animation-name: fadeIntTop;
   animation-duration: .5s;
+  -webkit-animation-duration: .5s;
   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .conatiner_top_one {
   opacity: 0;
   animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
   animation-duration: .5s;
+  -webkit-animation-duration: .5s;
   animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .main_title_Iam {
@@ -295,6 +313,8 @@ html, body {
 
 .waves {
   animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
   position: relative;
   width: 100%;
@@ -389,6 +409,7 @@ html, body {
   position: fixed;
   top: 0;
   animation: moveDown 1s ease-in-out;
+  -webkit-animation: moveDown 1s ease-in-out;
   -webkit-display: flex;
   display: flex;
   align-items: center;
@@ -433,6 +454,7 @@ html, body {
 
 .nav_text:hover {
   animation: hoverAnimationNav .5s forwards;
+  -webkit-animation: hoverAnimationNav .5s forwards;
 }
 
 @keyframes hoverAnimationNav {
@@ -775,7 +797,9 @@ html, body {
    padding-top: 7rem;
    padding-left: 2rem;
    animation-name: fadeIn;
+   -webkit-animation-name: fadeIn;
    animation-duration: 1s;
+   -webkit-animation-duration: 1s;
  }
 
  .submitted_message {
@@ -826,17 +850,7 @@ html, body {
     }
 
     .title_container {
-      height: 10vh;
       width: 50vw;
-      -webkit-display: flex;
-      display: flex;
-      align-items: center;
-      -webkit-align-items: center;
-      justify-content: center;
-      -webkit-justify-content: center;
-      animation-name: fadeInTop;
-      animation-duration: .5s;
-      animation-fill-mode: forwards;
     }
 
     .middle_content_container {
