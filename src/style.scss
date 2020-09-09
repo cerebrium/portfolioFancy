@@ -84,6 +84,7 @@ html, body {
   align-items: center;
   -webkit-align-items: center;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 .middle_content_container {
@@ -131,6 +132,7 @@ html, body {
   align-items: center;
   -webkit-align-items: center;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 .links {
@@ -333,7 +335,7 @@ html, body {
   0% {
   transform: translate3d(-90px,0,0);
   }
-  100% { 
+  100% {
     transform: translate3d(85px,0,0);
   }
 }
@@ -375,11 +377,12 @@ html, body {
     transform: translateY(-5rem);
   }
   to {
-    transform: translateY(0rem);
+    transform: translateY(0);
   }
 }
 
 .nav {
+  z-index: 1;
   width: 100vw;
   height: 5vh;
   background-color: $blackColor;
@@ -411,7 +414,7 @@ html, body {
   // width: 4vw;
 }
 .nav_seperation_div_projects {
-  margin-left: 2rem; 
+  margin-left: 2rem;
   // width: 7vw;
 }
 .nav_seperation_div_about {
@@ -467,6 +470,7 @@ html, body {
 }
 
 .projects_pictures_video {
+  z-index: .99;
   max-width: 30vw;
   // margin-bottom: 2rem;
   margin-right: 2rem;
@@ -480,6 +484,7 @@ html, body {
   width: 90%;
   height: 30vh;
   margin-bottom: 5rem;
+  z-index: .99;
 }
 
 /********************************* ABOUT ME ****************************************/
@@ -598,60 +603,6 @@ html, body {
   border: $bor;
   color: $col;
  }
- 
- 
- .button-container-1 {
-    position: relative;
-    width: 10vw;
-    height: 7vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6vh;
-    overflow: hidden;
-    border: 1px solid;
-    font-weight: 300;
-    font-family: 'Special Elite', cursive;
-    font-size: 1.1em;
-    transition: 0.5s;
-    letter-spacing: 1px;
-    color: $blueColor;
- 
-  .mas {
-    position: absolute;
-    color: $blackColor;
-    text-align: center;
-    width: 101%;
-    font-weight: 400;
-    position: absolute;
-    font-size: 1.15em;
-    margin-top: 15px;
-    overflow: hidden;
-  }
-
-  button {
-    width: 101%;
-    height: 100%;
-    font-family: 'Special Elite', cursive;
-    font-weight: 300;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    @include button($blackColor,
-    "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
-    2300%,
-    100%,
-    none,
-    $blueColor);
-    cursor: pointer;
-    -webkit-animation: ani2 0.7s steps(22) forwards;
-    animation: ani2 0.7s steps(22) forwards;
-  
-    &:hover {
-      -webkit-animation: ani 0.7s steps(22) forwards;
-      animation: ani 0.7s steps(22) forwards;
-    }
-    }
- }
- 
 
  #work:hover {
   color: $blackColor;
@@ -727,7 +678,6 @@ html, body {
     text-align: center;
     width: 101%;
     font-weight: 400;
-    position: absolute;
     font-size: 1.15em;
     margin-top: 15px;
     overflow: hidden;
@@ -756,59 +706,6 @@ html, body {
     }
     }
  }
- 
-
- #work2:hover {
-  color: $blackColor;
- }
- 
- @-webkit-keyframes ani {
-  from {
-   -webkit-mask-position: 0 0;
-   mask-position: 0 0;
-  }
- 
-  to {
-   -webkit-mask-position: 100% 0;
-   mask-position: 100% 0;
-  }
- }
- 
- @keyframes ani {
-  from {
-   -webkit-mask-position: 0 0;
-   mask-position: 0 0;
-  }
- 
-  to {
-   -webkit-mask-position: 100% 0;
-   mask-position: 100% 0;
-  }
- }
- 
- @-webkit-keyframes ani2 {
-  from {
-   -webkit-mask-position: 100% 0;
-   mask-position: 100% 0;
-  }
- 
-  to {
-   -webkit-mask-position: 0 0;
-   mask-position: 0 0;
-  }
- }
- 
- @keyframes ani2 {
-  from {
-   -webkit-mask-position: 100% 0;
-   mask-position: 100% 0;
-  }
- 
-  to {
-   -webkit-mask-position: 0 0;
-   mask-position: 0 0;
-  }
- }
 
 
  /****************************** CONTACT FORM **********************************/
@@ -828,7 +725,6 @@ html, body {
    padding: 5px;
    font-size: 1.5em;
    border-radius: .5rem;
-   border: 1px solid rgba(42, 43, 45, 0.301);
    color: $blackColor;
    font-family: $font;
    padding-left: 10px;
@@ -848,7 +744,6 @@ html, body {
   font-family: $font;
   border-radius: .5rem;
   color: $blackColor;
-  border: 1px solid rgba(42, 43, 45, 0.301);
  }
 
  .my_submit_button {
@@ -931,7 +826,17 @@ html, body {
     }
 
     .title_container {
+      height: 10vh;
       width: 50vw;
+      -webkit-display: flex;
+      display: flex;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      animation-name: fadeInTop;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
     }
 
     .middle_content_container {
@@ -943,6 +848,7 @@ html, body {
       -webkit-display: flex;
       display: flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       margin-bottom: 3rem;
     }
     .projects_pictures_video {
@@ -987,6 +893,7 @@ html, body {
       -webkit-display: flex;
       display: flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
     }
 
     .my_submit_button {
