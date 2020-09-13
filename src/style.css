@@ -110,7 +110,7 @@ body {
   }
   100% {
     opacity: 1;
-    height: 21vh;
+    height: 22vh;
     width: 3px;
     background-color: #2a2b2d;
   }
@@ -124,7 +124,7 @@ body {
 
   100% {
     opacity: 1;
-    height: 21vh;
+    height: 22vh;
     width: 3px;
     background-color: #2a2b2d;
   }
@@ -230,6 +230,9 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
   animation-duration: 1s;
+  height: 22vh;
+  width: 3px;
+  background-color: #2a2b2d;
 }
 .title_container {
   height: 10%;
