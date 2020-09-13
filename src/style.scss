@@ -1021,6 +1021,7 @@ html, body {
       height: 40px;
       min-height: 120px;
     }
+
     .content {
       height: 10%;
     }
@@ -1103,6 +1104,10 @@ html, body {
       display: flex;
       flex-direction: column;
       -webkit-flex-direction: column;
+    }
+
+    .nav {
+      display: none;
     }
 
     .my_submit_button {

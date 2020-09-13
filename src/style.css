@@ -930,6 +930,69 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .nav {
+    display: none
+  }
+  .mobileNavMenu {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+  }
+
+  .linksNav {
+    text-decoration: none;
+  }
+
+  /* .navTextMobil {
+    height: 10vh;
+    width: 80vw;
+  } */
+
+  .theTextMobile {
+    color: white;
+    font-size: 3em;
+    margin: 5vh;
+  }
+
+  .mobileNav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 5vh;
+    left: 5vw;
+    height: 90vh;
+    width: 90vw;
+    background-color: #2a2b2d;
+    opacity: .9;
+    z-index: 1;
+    transition: linear;
+  }
+  .hamburgerLine {
+    width: 30px;
+    height: 5px;
+    background-color: #2a2b2d;
+    border-radius: 3rem;
+    margin: 1px;
+  }
+  .hamburgerLineCrossedOne {
+    width: 30px;
+    height: 5px;
+    background-color: #2a2b2d;
+    border-radius: 3rem;
+    margin: 1px;
+    transform: rotate(135deg) translateX(4px) translateY(1px);
+    transition: all;
+  }
+  .hamburgerLineCrossedTwo {
+    width: 30px;
+    height: 5px;
+    background-color: #2a2b2d;
+    border-radius: 3rem;
+    margin: 1px;
+    transform: rotate(45deg) translateX(-5PX);
+  }
   .my_submit_button {
     width: 100%;
     height: 100%;
