@@ -577,8 +577,9 @@ body {
   }
 }
 .arrow_left {
-  height: 3vh;
-  border-radius: 1rem;
+  height: 2%;
+  width: 2%;
+  /* border-radius: 1rem; */
 }
 .visible_divs {
   animation: makeVisible 1s forwards;
